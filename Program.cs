@@ -13,3 +13,13 @@ Employee employee = new Employee.Builder()
 .SetEmployeeNumber(123)
 .Build();
 employee.DisplayEmployeeInformation();
+
+Request request = RequestBuilder.Instance()
+.AssetName("Lenovo")
+.SerialNumber("RRZSS231")
+.Employee("Kwanda")
+.Category("Laptop")
+.Description("Screen is broken")
+.RequestDate()
+.Build();
+request.PrintRequestReceipt();
